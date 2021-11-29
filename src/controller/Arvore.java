@@ -245,7 +245,7 @@ class Arvore{
 	
 	public void print(String prefix, No no, boolean isEsquerdo) {
 		if (no != null) {
-			System.out.println(prefix + (isEsquerdo ? "|-- " : "\\--") + no.elemento);
+			System.out.println(prefix + (isEsquerdo ? "(E)|-- " : "(D)\\--") + no.elemento);
 			print(prefix + (isEsquerdo ? "|   " : "    "), no.filhoEsquerdo, true);
 			print(prefix + (isEsquerdo ? "|   " : "    "), no.filhoDireito, false);
 		}
